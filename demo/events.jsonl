@@ -1,0 +1,12 @@
+{"event_id":"e-ins-k1","op":"insert","primary_key":"k1","txn":"t1","ts":10,"after":{"name":"alpha","value":1}}
+{"event_id":"e-ins-k2","op":"insert","primary_key":"k2","txn":"t2","ts":10,"after":{"name":"bravo","value":2}}
+{"event_id":"e-ins-k3","op":"insert","primary_key":"k3","txn":"t3","ts":10,"after":{"name":"charlie","value":3}}
+{"event_id":"e-ins-k4","op":"insert","primary_key":"k4","txn":"t4","ts":10,"after":{"name":"delta","value":4}}
+{"event_id":"e-ins-k5","op":"insert","primary_key":"k5","txn":"t5","ts":10,"after":{"name":"echo","value":5}}
+{"event_id":"e-ins-k6","op":"insert","primary_key":"k6","txn":"t6","ts":10,"after":{"name":"foxtrot","value":6}}
+{"event_id":"e-upd-k1","op":"update","primary_key":"k1","txn":"t7","ts":12,"before":{"name":"alpha","value":1},"after":{"name":"alpha-updated","value":11}}
+{"event_id":"e-upd-k7","op":"update","primary_key":"k7","txn":"t8","ts":12,"after":{"name":"golf","value":7}}
+{"event_id":"e-del-k2","op":"delete","primary_key":"k2","txn":"t9","ts":13,"before":{"name":"bravo","value":2}}
+{"event_id":"e-del-k3","op":"delete","primary_key":"k3","txn":"t10","ts":14,"before":{"name":"charlie","value":3}}
+{"event_id":"e-ins-k1","op":"insert","primary_key":"k1","txn":"t11","ts":15,"after":{"name":"duplicate-must-not-apply","value":999}}
+{"event_id":"e-late-k4","op":"update","primary_key":"k4","txn":"t12","ts":9,"after":{"name":"late-delta","value":400}}
